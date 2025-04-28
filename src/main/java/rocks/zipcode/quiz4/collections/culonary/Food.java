@@ -12,8 +12,6 @@ public class Food {
 
 
     public List<Spice> getAllSpices() {
-
-
         return spices;
     }
 

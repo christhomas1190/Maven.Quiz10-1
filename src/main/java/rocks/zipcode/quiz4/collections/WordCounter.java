@@ -12,15 +12,10 @@ public class WordCounter {
     public WordCounter(String... strings) {
         this.strings = strings;
     }
-
-
     public Map<String, Integer> getWordCountMap() {
         Map<String, Integer> wordCountMap = new HashMap<>();
-
-
         for (String str : strings) {
             String[] words = str.split(" ");
-
 
             for (String word : words) {
                 if (!word.isEmpty()) {
@@ -28,8 +23,6 @@ public class WordCounter {
                 }
             }
         }
-
-
         return wordCountMap;
     }
 }
